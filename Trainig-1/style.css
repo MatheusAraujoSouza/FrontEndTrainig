@@ -1,0 +1,52 @@
+body,ul,li,p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family:Arial;
+}
+
+
+a {
+    text-decoration: none;
+    color:aliceblue
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: black;
+}
+img{
+    max-width: 100%;
+    width:  400px;
+    height: 700px;
+    display: block;
+
+}
+.menu ul{
+    display: flex;
+
+}
+
+.menu li { 
+    margin-left: 10px;
+}
+
+.manu li a{ 
+    display: block;
+    padding: 10px;
+   
+}
+
+
+/*CSS Flex Box*/
+
+.flex{
+    display: flex;
+}
+
+
+

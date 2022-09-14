@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Header Menu Footer main right</title>
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: main; }
+        .item5 { grid-area: footer; }
+        .grid-container{
+            display: grid;
+
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main main main'
+                'menu main main main main main'
+                'footer footer footer footer footer footer';
+            gap:10px;
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: #3356705e;
+            text-align: center;
+            padding: 10px 5px;
+            font-size: 40px;
+            font-family: Verdana;
+        }
+
+        a:active {
+        color: blue;
+        }
+
+        li{
+            list-style: none;
+            text-decoration: none;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">
+            <ul>
+                <li><a href="https://github.com/MatheusSouzaHiperstream">Matheus Git</a></li>
+                <li><a href="https://github.com/">Github</a></li>
+                <li><a href="https://www.tutorialrepublic.com/faq/how-to-loop-through-elements-with-the-same-class-in-jquery.php">How to Loop Through </a></li>
+                <li><a href="https://www.tutorialrepublic.com/css-tutorial/">css Tutorial</a></li>
+                <li><a href="https://www.tutorialrepublic.com/css-tutorial/css-lists.php">cscs List</a></li>
+            </ul>
+        </div>
+        <div class="item3">Main</div>  
+        <div class="item4">Main</div>
+        <div class="item5">Footer</div>
+      </div>
+</body>
+</html>
