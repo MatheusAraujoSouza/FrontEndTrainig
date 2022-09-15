@@ -38,7 +38,7 @@ img{
 .manu li a{ 
     display: block;
     padding: 10px;
-   
+  
 }
 
 
@@ -46,6 +46,14 @@ img{
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.flex  div{
+    flex:1 1 200px;
+    margin: 10px 5px;
 }
 
 
