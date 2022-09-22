@@ -11,14 +11,38 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 0;
+  border: 2px solid var(--black-color);
+  outline: none;
   background-color: var(--yellow-color);
   color: var(--black-color);
-  outline: none;
   cursor: pointer;
   padding: 20px 25px;
   position: relative;
   font-family: Tomorrow, sans-serif;
-  font-size: 1rem;
+  font-size: .85rem;
   text-transform: uppercase;
+}
+
+.btn::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: -14px;
+  left: -13px;
+  background-color: var(--yellow-color);
+  border-top: 2px solid var(--black-color);
+  transform: rotate(45deg);
+}
+
+.btn::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -14px;
+  right: -13px;
+  background-color: var(--yellow-color);
+  border-bottom: 2px solid var(--black-color);
+  transform: rotate(45deg);
 }
